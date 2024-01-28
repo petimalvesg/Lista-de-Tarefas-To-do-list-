@@ -23,7 +23,7 @@ function addTask() {
 
         listContainer.appendChild(li);
     }
-    // Limpa o input de texto.
+    // Limpa o input de texto após cirar a tarefa.
     inputBox.value = "";
     saveData();
 }
