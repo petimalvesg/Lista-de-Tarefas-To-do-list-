@@ -2,7 +2,7 @@ const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
 function addTask() {
-    // Validação de tarefas.
+    // Valida as tarefas.
     if (inputBox.value === '') {
         alert("Escreva sua tarefa.");
     } else {
@@ -40,14 +40,13 @@ listContainer.addEventListener("click", function (e) {
     }
 }, false);
 
-//Salva os dados na localStorage.
+
 function saveData() {
     localStorage.setItem("data", listContainer.innerHTML);
 }
-//Mostra os dados na localStorage.
+
 function showTask() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
-//Mostra as tarefas quando carregar a página.
 showTask();
