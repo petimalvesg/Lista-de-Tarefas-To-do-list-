@@ -49,5 +49,5 @@ function showTask() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
-//Mostrar as tarefas quando carregar a página.
+//Mostra as tarefas quando carregar a página.
 showTask();
